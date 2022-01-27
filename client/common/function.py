@@ -206,7 +206,7 @@ class Sandbox(object):
 
     def SandboxPayIn(self,accountId,amount,currency):
         return get_inform(method('SandboxPayIn'),
-                          schemas('SandboxPayIn', accountId,amount,currency),
+                          schemas('SandboxPayIn', accountId=accountId,amount=amount,currency=currency),
                           self.token).get_inform()
 
     def OpenSandboxAccount(self):
@@ -214,9 +214,9 @@ class Sandbox(object):
                           schemas('OpenSandboxAccount'),
                           self.token).get_inform()
 
-    def CloseSandboxAccount(self,accountId,amount,currency):
+    def CloseSandboxAccount(self,accountId):
         return get_inform(method('CloseSandboxAccount'),
-                          schemas('CloseSandboxAccount', accountId,amount,currency),
+                          schemas('CloseSandboxAccount', accountId=accountId),
                           self.token).get_inform()
     
     

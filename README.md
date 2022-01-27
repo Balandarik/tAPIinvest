@@ -10,6 +10,12 @@
     git clone https://github.com/balandarik/tAPIinvest
     python setup.py install
 
+Проверка работы пакета
+
+    from client.tAPIinvest import *
+    client.tests.start_tests()
+    
+
 В сервисе реализовано 2 класса для работы с боевым режимом и режимом песочницы
 
 > main_function - боевой режим
