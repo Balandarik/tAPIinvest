@@ -1,0 +1,7 @@
+def STOP_ORDER_EXPIRATION_TYPE(check):
+    if check.upper() == 'UNSPECIFIED' or check.upper()=='STOP_ORDER_EXPIRATION_TYPE_UNSPECIFIED':
+        return 'STOP_ORDER_EXPIRATION_TYPE_UNSPECIFIED'
+    elif check.upper() == 'GOOD_TILL_CANCEL' or check.upper()=='STOP_ORDER_EXPIRATION_TYPE_GOOD_TILL_CANCEL':
+        return 'STOP_ORDER_EXPIRATION_TYPE_GOOD_TILL_CANCEL'
+    elif check.upper() == 'GOOD_TILL_DATE' or check.upper() == 'STOP_ORDER_EXPIRATION_TYPE_GOOD_TILL_DATE':
+        return 'STOP_ORDER_EXPIRATION_TYPE_GOOD_TILL_DATE'
