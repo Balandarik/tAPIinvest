@@ -103,7 +103,7 @@ class Tests(unittest.TestCase):
         self.assertEqual('Authentication failed',self.sandbox.OpenSandboxAccount()['message'])
         
     def test_CloseSandboxAccount(self):
-        self.assertEqual('Authentication failed',self.sandbox.CloseSandboxAccount('209745345333458'))
+        self.assertEqual('Authentication failed',self.sandbox.CloseSandboxAccount('209745345333458')['message'])
                
 def start_tests():
     unittest.main()

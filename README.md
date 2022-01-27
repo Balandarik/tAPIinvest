@@ -12,7 +12,7 @@
 
 Проверка работы пакета
 
-    from client.tAPIinvest import *
+    from client.tests.tests import *
     client.tests.start_tests()
     
 
